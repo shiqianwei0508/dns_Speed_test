@@ -27,7 +27,7 @@ def run(dns_list,html_list):
                     while i < 10:
                         zz = os.popen(a)
                         z = zz.readlines()[-5]
-                        m = re.search('[1-9]\d*', z)
+                        m = re.search('[0-9]\d*', z)
                         ms = ms + int(m.group())
                         i = i + 1
                     ms = round(ms / 10, 2)
